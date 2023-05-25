@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top nav-container " role="navigation">
+    <div class="container-fluid side-spacing pt-2 pb-2 ">
+      <a class="navbar-brand logo-smaller nav-row"><img src="img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse align-items-center nav-controls" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-5">
+            <a class="nav-link nav-text me-5" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-dark nav-text nav-button" href="#" data-mdb-ripple-color="dark">Let's talk <i
+                class="bi-arrow-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-image d-flex">
+    <div class="container justify-content-center align-items-left hero-margin side-spacing">
+      <div class="text-white text-left">
+        <h1 class="hero-heading">We build dreams,<br>not just walls</h1>
+        <h4 class="hero-subheading mb-5">Fulfill your international property developments with us</h4>
+        <a class="btn btn-dark hero-btn" href="#!" role="button">Let's talk<img src="./icons/strelica.svg"
+            alt="Icon"></a>
+      </div>
+    </div>
+    <img src="icons/arrowdown.svg" class="hero-arrow" alt="arrow icon">
+  </header>
+
+  <div class="container-fluid d-flex">
+    <div class="container justify-content-center align-items-left case-studies-margin side-spacing">
+      <div class="text-left">
+        <h1 class="case-studies-heading">Case Studies</h1>
+        <h4 class="case-studies-subheading mb-5">We deliver a unique and truly bespoke approach to delivering
+          international<br>developments to market, with over 10 years success around the world.</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pb-4">
+    <div class="row responsive ">
+      <div class="col">
+        <div class="me-5 image-container single-line" >
+          <img src="/img/france.jpg" class="card-img-top slider-photo" alt="...">
+          <h1 id="france" data-title="FRANCE" class="image-heading"><span>FRANCE</span></h1>
+        </div>
+      </div>
+      <div class="col">
+        <div class="me-5 image-container single-line">
+          <img src="img/morroco.jpg" class="card-img-top slider-photo" alt="...">
+          <h1 data-title="MOROCCO" class="image-heading"><span>MOROCCO</span></h1>
+        </div>
+      </div>
+      <div class="col">
+        <div class="me-5 image-container single-line">
+          <img src="img/portugal.jpg" class="card-img-top slider-photo" alt="...">
+          <h1 data-title="PORTUGAL" class="image-heading"><span>PORTUGAL</span></h1>
+        </div>
+      </div>
+      <div class="col">
+        <div class="me-5 image-container single-line">
+          <img src="img/london.jpg" class="card-img-top slider-photo" alt="...">
+          <h1 id="london" data-title="LONDON" class="image-heading"><span>LONDON</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid d-flex">
+    <div class="container align-items-left case-studies-margin side-spacing">
+      <div class="text-left">
+        <h1 class="case-studies-heading">We are Invoriem</h1>
+        <h4 class="case-studies-subheading mb-5">We fulfill international property developments</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="justify-content-center d-flex">
+    <div class="wrapper d-flex justify-content-end">
+      <div class="video-overlay"></div> 
+      <img id="video-cover" src="/img/videobg.jpg" alt="Video title">
+      <iframe id="video" width="1238" height="696" src="https://www.youtube.com/embed/EWjUY_3ubf4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <button id="playbutton" class="play-btn">
+        <svg fill="none" height="120" viewBox="0 0 120 120" width="120" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="60" fill="#000" fill-opacity=".7" r="60" />
+          <circle cx="60" cy="60" r="59" stroke="#fff" stroke-opacity=".5" stroke-width="2" />
+          <path d="m47 78.1149v-35.4914c0-1.5741 1.7341-2.5312 3.0659-1.6923l26.4123 16.6366c1.2032.7579 1.2534 2.4939.0961 3.3201l-26.4123 18.8548c-1.3238.945-3.162-.0013-3.162-1.6278z" fill="#fff" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <section class="side-spacing mt-5">
+    <footer class="d-flex justify-content-between">
+      <div class="col-md-4 text-center text-md-start">
+        <a href="/" class="mb-3 me-2 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="text-muted">© 2020 Invoriem, Inc</span>
+      </div>
+      <div class="col-md-4 pe-4">
+        <ul class="nav justify-content-end align-items-center">
+          <li class="ms-2">
+            <a class="text-muted text-decoration-none" href="#">info@invoriem.com</a>
+          </li>
+          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/instagram.svg" alt=""></a></li>
+          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/facebook.svg" alt=""></a></li>
+          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/twitter.svg" alt=""></a></li>
+          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/linkedin.svg" alt=""></a></li>
+        </ul>
+      </div>
+      
+    </footer>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+
+        var height = $('.hero-image').height();
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop >= height - 800) {
+          $('.nav-container').addClass('solid-nav');
+        } else {
+          $('.nav-container').removeClass('solid-nav');
+        }
+
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $('.responsive').slick({
+      infinite: true,
+      speed: 300,
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
+  <script>
+    const Player = document.getElementById('video');
+    const PlayBtn = document.getElementById('playbutton');
+    const videoCover = document.getElementById('video-cover');
+
+    let times = 0, playY;
+    const playVideo = PlayBtn.addEventListener('click', () => {
+      if (times == 0) {
+        playY = Player.src += '?autoplay=1';
+        times = 1;
+        Player.style.display = 'block';
+        PlayBtn.style.display = 'none';
+        document.getElementById('video-cover').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
