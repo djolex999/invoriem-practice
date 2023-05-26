@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top nav-container " role="navigation">
+  <nav class="navbar navbar-expand-md fixed-top nav-container " role="navigation">
     <div class="container-fluid side-spacing pt-2 pb-2 ">
       <a class="navbar-brand logo-smaller nav-row"><img src="img/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,7 +25,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse align-items-center nav-controls" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item me-5">
             <a class="nav-link nav-text me-5" aria-current="page" href="#">About us</a>
           </li>
@@ -41,20 +41,20 @@
   <header class="hero-image d-flex">
     <div class="container justify-content-center align-items-left hero-margin side-spacing">
       <div class="text-white text-left">
-        <h1 class="hero-heading">We build dreams,<br>not just walls</h1>
-        <h4 class="hero-subheading mb-5">Fulfill your international property developments with us</h4>
-        <a class="btn btn-dark hero-btn" href="#!" role="button">Let's talk<img src="./icons/strelica.svg"
-            alt="Icon"></a>
+        <h1 class="hero-heading responsive-text">We build dreams,<br>not just walls</h1>
+        <h4 class="hero-subheading mb-5 responsive-text">Fulfill your international property developments with us</h4>
+        <a class="btn btn-dark hero-btn responsive-text" href="#!" role="button">Let's talk<img src="./icons/strelica.svg" alt="Icon"></a>
+        <img id="responsive-img" width="100%" src="icons/invoriemMob.svg" alt="invoriem text">
       </div>
     </div>
-    <img src="icons/arrowdown.svg" class="hero-arrow" alt="arrow icon">
+    <img id="responsive-img" src="icons/arrowdown.svg" class="hero-arrow" alt="arrow icon">
   </header>
 
   <div class="container-fluid d-flex">
     <div class="container justify-content-center align-items-left case-studies-margin side-spacing">
       <div class="text-left">
-        <h1 class="case-studies-heading">Case Studies</h1>
-        <h4 class="case-studies-subheading mb-5">We deliver a unique and truly bespoke approach to delivering
+        <h1 class="case-studies-heading responsive-font">Case Studies</h1>
+        <h4 class="case-studies-subheading mb-5 ">We deliver a unique and truly bespoke approach to delivering
           international<br>developments to market, with over 10 years success around the world.</h4>
       </div>
     </div>
@@ -92,13 +92,13 @@
   <div class="container-fluid d-flex">
     <div class="container align-items-left case-studies-margin side-spacing">
       <div class="text-left">
-        <h1 class="case-studies-heading">We are Invoriem</h1>
+        <h1 class="case-studies-heading responsive-font">We are Invoriem</h1>
         <h4 class="case-studies-subheading mb-5">We fulfill international property developments</h4>
       </div>
     </div>
   </div>
 
-  <div class="justify-content-center d-flex">
+  <div class="justify-content-center d-flex mt-5 video-container-mobile">
     <div class="wrapper d-flex justify-content-end">
       <div class="video-overlay"></div> 
       <img id="video-cover" src="/img/videobg.jpg" alt="Video title">
@@ -112,31 +112,32 @@
       </button>
     </div>
   </div>
-
-  <section class="side-spacing mt-5">
-    <footer class="d-flex justify-content-between">
-      <div class="col-md-4 text-center text-md-start">
-        <a href="/" class="mb-3 me-2 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="text-muted">© 2020 Invoriem, Inc</span>
-      </div>
-      <div class="col-md-4 pe-4">
-        <ul class="nav justify-content-end align-items-center">
-          <li class="ms-2">
-            <a class="text-muted text-decoration-none" href="#">info@invoriem.com</a>
-          </li>
-          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/instagram.svg" alt=""></a></li>
-          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/facebook.svg" alt=""></a></li>
-          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/twitter.svg" alt=""></a></li>
-          <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/linkedin.svg" alt=""></a></li>
-        </ul>
-      </div>
-      
+    <footer class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="order-3 order-md-1 col-12 col-md-4 text-center text-md-start mt-3 mt-md-0 ">
+            <a href="/" class="mb-3 me-2 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-muted">© 2020 Invoriem, Inc</span>
+        </div>
+        <div class="order-1 order-md-2 col-12 col-md-4 text-center pe-4">
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center">
+                <div class="mb-3 mb-md-0 me-md-2">
+                    <a class="text-muted text-decoration-none" href="#">info@invoriem.com</a>
+                </div>
+                <ul class="nav">
+                    <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/instagram.svg" alt=""></a></li>
+                    <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/facebook.svg" alt=""></a></li>
+                    <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/twitter.svg" alt=""></a></li>
+                    <li class="ms-2"><a class="text-muted" href="#"><img width="28" height="28" src="/icons/linkedin.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
-  </section>
+</section>
+
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
